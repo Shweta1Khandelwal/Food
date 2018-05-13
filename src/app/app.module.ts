@@ -10,6 +10,8 @@ import { SettingsPage } from '../pages/settings/settings';
 import { LoginPage } from '../pages/login/login';
 import { CheckoutPage } from '../pages/checkout/checkout';
 import { OrderCartPage } from '../pages/order-cart/order-cart';
+import { OrderHistoryPage } from '../pages/order-history/order-history';
+import { ProductPage } from '../pages/product/product';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -22,7 +24,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingsPage,
     LoginPage,
     OrderCartPage,
-    CheckoutPage
+    CheckoutPage,
+    OrderHistoryPage,
+    ProductPage
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   imports: [
@@ -38,7 +42,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     SettingsPage,
     LoginPage,
     OrderCartPage,
-    CheckoutPage
+    CheckoutPage,
+    OrderHistoryPage,
+    ProductPage
   ],
   providers: [
     StatusBar,

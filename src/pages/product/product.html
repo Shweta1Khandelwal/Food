@@ -1,0 +1,63 @@
+<!--
+  Generated template for the ProductPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>PRODUCT</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+    <img src="http://www.thetraveltrunk.in/assets/resources/2017/03/cover-img-333.jpg">
+
+    <ion-fab right middle style="margin-top: -60px" (click)="OpenOrderCart()" >
+      <button ion-fab mini><ion-icon name="call"></ion-icon></button>
+    </ion-fab>
+    <p style="font-size: 13px;margin-left: 10px"><b>RIB EYE STEAK</b></p>
+    <p style="margin-left: 10px;margin-top: -10px; font-size: 10.5px;">CUT FROM THE STEAK IS ONE OF THE MOST SUCCULENT STEAKS AND GUANANTEED TO SATISFY EVEN THCUT FROM THE RIB SECTION, THE RIB-EYE MOST DEDICATED CARNIVORE</p>
+<p style="border-bottom: 1px solid grey !important"></p>
+    <ion-grid style="margin-top: -20px">
+        <ion-row>
+          <ion-col>
+         <p>PRICE</p>  
+          </ion-col>
+          <ion-col>
+           <p>OUTLET</p>
+          </ion-col>
+          <ion-col>
+          <p>TIME</p> 
+          </ion-col>
+          <ion-col>
+            <p> RATING</p>
+            </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: -25px">
+            <ion-col>
+           <p><b>$32</b></p>  
+            </ion-col>
+            <ion-col>
+             <p><b>HOUSE</b></p>
+            </ion-col>
+            <ion-col>
+            <p><b>20-30 MIN</b></p> 
+            </ion-col>
+            <ion-col style="margin-top: 12px">
+              <ion-icon  name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon><ion-icon name="star"></ion-icon>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+      <div style="background-color: gray;height: 30px;margin-top: -25px">
+       <p style="text-align: center;color: #fff;padding-top: 7px">Our Other Menu</p>
+      </div>
+      <ion-footer no-shadow >
+          <ion-toolbar position="bottom" >
+          <p (click)="home()"style="text-align: center;color: white;font-size: 15px"><ion-icon name="cart" style="color: white"></ion-icon>&nbsp; ORDER NOW</p>
+          </ion-toolbar>
+        </ion-footer>
+  </ion-content>

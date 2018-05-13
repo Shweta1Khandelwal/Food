@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the CheckoutPage page.
+ * Generated class for the ProductPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-checkout',
-  templateUrl: 'checkout.html',
+  selector: 'page-product',
+  templateUrl: 'product.html',
 })
-export class CheckoutPage {
-  public isToggled: boolean;
+export class ProductPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.isToggled = false;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CheckoutPage');
+    console.log('ionViewDidLoad ProductPage');
   }
-  
- 
+
 }

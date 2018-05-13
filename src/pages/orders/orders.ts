@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { OrderHistoryPage } from '../order-history/order-history';
 
 /**
  * Generated class for the OrdersPage page.
@@ -16,10 +17,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class OrdersPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+   
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrdersPage');
+  }
+  orderHistoryPage(){
+this.navCtrl.push(OrderHistoryPage);
   }
 
 }

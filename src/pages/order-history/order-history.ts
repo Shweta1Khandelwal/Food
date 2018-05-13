@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
- * Generated class for the CheckoutPage page.
+ * Generated class for the OrderHistoryPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +10,18 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-checkout',
-  templateUrl: 'checkout.html',
+  selector: 'page-order-history',
+  templateUrl: 'order-history.html',
 })
-export class CheckoutPage {
-  public isToggled: boolean;
+export class OrderHistoryPage {
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.isToggled = false;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CheckoutPage');
+    console.log('ionViewDidLoad OrderHistoryPage');
   }
-  
- 
+  home(){
+this.navCtrl.push(HomePage);
+  }
 }
