@@ -1,0 +1,41 @@
+<!--
+  Generated template for the OrderCartPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>OrderCart</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<div class="div1">
+<p style="margin: 10px"><b>American Sushi Salomen </b></p>
+<p style="margin-left: 245px;margin-top: -25px;color: green;"><b>$500</b></p>
+<p style="margin: 10px;margin-top: -15px;">Avengers EastWood</p>
+<div class="icon">
+<ion-icon padding name="remove-circle" (click)="decreaseValue()" style="font-size: 30px"></ion-icon>
+<ion-icon name="add-circle" (click)="IncreaseValue()" style="font-size: 30px;margin-top:-150px;"></ion-icon>
+<p #myNumber style="margin-left: 45px;margin-top: -42px;font-size: 20px">1</p>
+</div>
+<div class="trash" >
+<ion-icon name="trash" (click)="trash()" style="font-size: 30px;"></ion-icon>
+</div>
+</div>
+<div class="div1" style="margin-top: 15px" >
+  <p style="margin: 10px"><b>SubTotal</b></p>
+  <p style="margin-left: 245px;margin-top: -25px;"><b>$500</b></p>
+  <p style="margin: 10px;margin-top: 30px;"><b>Tax </b></p>
+  <p style="margin-left: 245px;margin-top: -25px;"><b>$3.45</b></p>
+  <p style="margin: 10px;margin-top: 30px;"><b>Total </b></p>
+  <p style="margin-left: 230px;margin-top: -25px;"><b>$503.45</b></p>
+</div>
+<div class="btn">
+<button ion-button block color="danger" (click)="checkout()">CHECKOUT</button>
+</div>
+</ion-content>

@@ -1,0 +1,42 @@
+<!--
+  Generated template for the CheckoutPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CHECKOUT</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<div>
+  <p style="text-align: center">Select Paymet Method</p>
+  <ion-card>
+    <!-- <ion-icon name="card"></ion-icon>
+    <ion-icon name="card"></ion-icon> -->
+    <ion-card-content>
+      
+      <ion-list radio-group >
+        <ion-item>
+         
+          <ion-radio value="first" checked [(ngModel)]="isToggled" (ionChange)="notify()" ></ion-radio>
+          <ion-label><ion-icon name="card"></ion-icon> &nbsp; CREDIT CARD</ion-label>
+        </ion-item>
+        <ion-item>
+          
+          <ion-radio value="second" (ionSelect)="radioChecked('1')" ></ion-radio>
+          <ion-label><ion-icon name="card"></ion-icon>&nbsp;   PAYPAL</ion-label>
+        </ion-item>
+        
+      </ion-list>
+      
+      
+    </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>
